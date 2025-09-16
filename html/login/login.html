@@ -5,16 +5,16 @@
    <title>Login page</title>
    <meta charset="UTF-8">
    <link rel="stylesheet" href="../../css/login.css">
-
 </head>
-
 <body>
-<form onsubmit="window.location.href='../'; return false;">
-   <input type="text" placeholder="User name" name="u-name">
-   <input type="password" placeholder="Password" name="u-pass">
-   <button type="submit">Login</button>
-      <p>Don't have account?<a href="#">Register</a></p>
+   <form onsubmit="window.location.href='../'; return false;">
+      <h2>Login</h2>
+      <input type="text" placeholder="User name" name="u-name" required>
+      <input type="password" placeholder="Password" name="u-pass" required>
+      <button type="submit">Login</button>
+      <p>Don't have an account?
+         <a href="../register.html">Register</a>
+      </p>
    </form>
 </body>
-
 </html>
