@@ -1,72 +1,144 @@
-body {
-   background-image: url("../imge/Fresh\ organic\ fruits\ and\ vegetables\ in\ heart\ plate\ doctor\ stethoscope\ and\ plastic\ water\ bottles\ _\ Premium\ Photo.jpeg");
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-   background-attachment: fixed;
-   font-family: sans-serif;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100vh;
-}
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
 
-form {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   border: 1px solid #cccccc94;
-   border-radius: 20px;
-   background-color: transparent;
-   width: 300px;
-   padding: 40px;
-   color: #fff;
-   backdrop-filter: blur(15px);
-}
+      body {
+         background-image: url("../imge/food1.jpeg"); /* غيّر المسار حسب صورتك */
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+         background-attachment: fixed;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         min-height: 100vh;
+         padding: 20px;
+      }
 
-input {
-   width: 94%;
-   padding: 10px;
-   margin: 10px 0;
-   border-radius: 20px;
-   background-color: transparent;
-   color: #fff;
-   border: 1px solid #ffffff94;
-   outline: none;
-}
+      form {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         border: 1px solid #cccccc94;
+         border-radius: 20px;
+         background-color: rgba(255, 255, 255, 0.08);
+         width: 320px;
+         max-width: 100%;
+         padding: 40px 30px;
+         color: #fff;
+         backdrop-filter: blur(15px);
+         box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6);
+         transition: all 0.3s ease;
+      }
 
-button {
-   width: 100%;
-   padding: 10px;
-   border-radius: 20px;
-   background-color: #ffffff;
-   color: #000;
-   border: none;
-   cursor: pointer;
-   margin-top: 20px;
-   font-size: 18px;
-   font-weight: 600;
-}
+      h2 {
+         margin-bottom: 20px;
+         font-size: 26px;
+         font-weight: bold;
+         text-align: center;
+         color: #fff;
+      }
 
-button:hover {
-   background-color: #7a7a7a;
-   color: #fff;
-}
+      input {
+         width: 100%;
+         padding: 12px 15px;
+         margin: 10px 0;
+         border-radius: 20px;
+         background-color: transparent;
+         color: #fff;
+         border: 1px solid #ffffff94;
+         outline: none;
+         font-size: 15px;
+         transition: all 0.3s ease;
+      }
 
-input::placeholder {
-   color: rgba(255, 255, 255, 0.7);
-}
+      input:focus {
+         border: 1px solid #fff;
+         background-color: rgba(255, 255, 255, 0.1);
+      }
 
-a {
-   color: #fff;
-}
+      button {
+         width: 100%;
+         padding: 12px;
+         border-radius: 20px;
+         background-color: #ffffff;
+         color: #000;
+         border: none;
+         cursor: pointer;
+         margin-top: 20px;
+         font-size: 17px;
+         font-weight: 600;
+         transition: all 0.3s ease;
+      }
 
-a:hover {
-   color: #000000;
-}
+      button:hover {
+         background-color: #7a7a7a;
+         color: #fff;
+      }
 
-p {
-   font-size: 14px;
-   margin-top: 30px;
-}
+      input::placeholder {
+         color: rgba(255, 255, 255, 0.7);
+      }
+
+      p {
+         font-size: 14px;
+         margin-top: 25px;
+         text-align: center;
+      }
+
+      a {
+         color: #fff;
+         font-weight: 600;
+         margin-left: 5px;
+         text-decoration: none;
+         transition: 0.3s;
+      }
+
+      a:hover {
+         color: #000;
+      }
+            /* ===== Responsive ===== */
+      @media (max-width: 768px) {
+         form {
+            width: 90%;
+            padding: 30px 20px;
+         }
+
+         h2 {
+            font-size: 22px;
+         }
+
+         button {
+            font-size: 16px;
+            padding: 10px;
+         }
+      }
+
+      @media (max-width: 480px) {
+         form {
+            width: 100%;
+            padding: 25px 15px;
+         }
+
+         h2 {
+            font-size: 20px;
+         }
+
+         input {
+            font-size: 14px;
+            padding: 10px;
+         }
+
+         button {
+            font-size: 15px;
+            padding: 10px;
+         }
+
+         p {
+            font-size: 12px;
+         }
+      }

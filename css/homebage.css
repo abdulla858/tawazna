@@ -20,7 +20,9 @@ body {
   min-height: 100vh;
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: var(--secondary-color);
+  background-image: url("../imge/background.png");
+  background-repeat:no-repeat ;
+  background-size: cover;
   color: var(--text-color);
   display: flex;
   flex-direction: column;
@@ -72,7 +74,6 @@ body {
 /* Main Content - General */
 .main-content, .main-contact {
   flex: 1;
-  background-color: #ededed;
   width: 100%;
   padding: 40px 20px;
 }
@@ -271,8 +272,8 @@ body {
 /* Contact Section */
 .hero_wos{
    background-color: aqua;
-    height: 60%;
-    width: 55%;
+    height: 70%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
